@@ -44,7 +44,22 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "ja"],
+    path: "i18n",
+    localeConfigs: {
+      en: {
+        label: "English",
+        direction: "ltr",
+        htmlLang: "en-US",
+        calendar: "gregory",
+      },
+      ja: {
+        label: "日本",
+        direction: "rtl",
+        htmlLang: "jp-JP",
+        calendar: "japanese",
+      },
+    },
   },
   plugins: [
     "docusaurus-plugin-sass",
@@ -269,7 +284,7 @@ const config = {
         apiKey: "97e7dc35be9559b65f0d03c0c9684272", //prod
         indexName: "unifiedid", //prod
 
-        // Setting this to false for now - it seems we don't have our docsearch meta tags 
+        // Setting this to false for now - it seems we don't have our docsearch meta tags
         // set correctly. See https://discourse.algolia.com/t/algolia-searchbar-is-not-working-with-docusaurus-v2/14659/2
         contextualSearch: false,
 
