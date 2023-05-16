@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Lottie from "lottie-react";
 import styles from "./styles.module.scss";
 import { useIsMobile } from "@site/src/utils/isMobile";
+import Translate from "@docusaurus/Translate";
 
 // @ts-ignore - Lottie animation data
 import * as heroBgDesktop from "./heroBgDesktop.json";
@@ -25,16 +26,20 @@ export default function HomepageHero(): JSX.Element {
         <div className="row">
           <div className="col col--10">
             <h1 className={clsx("type-alpha")}>
-              An open-source identity solution built for the open internet
+              <Translate id="homepage.heading">
+                An open-source identity solution built for the open internet
+              </Translate>
             </h1>
           </div>
         </div>
         <div className="row">
           <div className="col col--6">
             <p className={clsx("type-paragraph-large")}>
-              Unified ID 2.0 leverages encrypted email and phone number data to
-              provide a privacy-conscious, secure, and accurate identity
-              standard for the entire digital advertising ecosystem.
+              <Translate id="homepage.copy">
+                Unified ID 2.0 leverages encrypted email and phone number data
+                to provide a privacy-conscious, secure, and accurate identity
+                standard for the entire digital advertising ecosystem.
+              </Translate>
             </p>
           </div>
         </div>
