@@ -187,6 +187,10 @@ const config = {
           //   ],
           // },
           {
+            type: "localeDropdown",
+            position: "right",
+          },
+          {
             type: "search",
             position: "right",
             className: "desktop-only hide-on-marketing-page",
