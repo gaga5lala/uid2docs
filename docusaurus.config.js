@@ -143,6 +143,12 @@ const config = {
             label: "Data Providers",
             position: "left",
           },
+          {
+            type: "doc",
+            docId: "intro",
+            label: "Docs",
+            position: "left",
+          },
           // @TODO hiding until phase 2{
           //   type: "dropdown",
           //   label: "Resources",
